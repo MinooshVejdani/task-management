@@ -3,18 +3,18 @@ const EventBus = new EventTarget();
 const defaultOptions = ["Not Started", "In Progress", "Done"];
 let statusArray = [];
 const colors = [
-  "#FAE7A47a",
-  "#EE9B007a",
-  "#0A93967a",
-  "#AE20127a",
-  "#94D2BD7a",
-  "#F7FAB67a",
-  "#FBCEC37a",
-  "#B3FBC07a",
-  "#BECFFF7a",
-  "#AFFBF67a",
-  "#FFCFE17a",
-  "#B6FFD77a",
+  "#78740e7a",
+  "#784c0eaa",
+  "#0e6c787a",
+  "#780e197a",
+  "#0e783c7a",
+  "#74780e7a",
+  "#780e5a7a",
+  "#0e78657a",
+  "#0e4a787a",
+  "#78580e7a",
+  "#5a0e787a",
+  "#0e78737a",
 ];
 //function to notifly all dropdowns
 function updateDropdowns(action, status) {
@@ -183,7 +183,13 @@ export class Dropdown {
 
     if(action === "remove" && this.dropdownButton.textContent === status.item.textContent){
       this.dropdownButton.textContent = 'None';
-      this.dropdownButton.style.backgroundColor = '#f5f5f5';
+      
+        // Remove inline styles to reset to class-defined styles
+      this.dropdownButton.style.backgroundColor = null;
+      this.dropdownButton.style.color = null;
+
+      this.dropdownButton.classList.add('dropdown-button');
+
     }
   }
 }

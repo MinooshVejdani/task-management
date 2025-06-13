@@ -47,12 +47,13 @@ export class GridCell {
 
     setBorderColor(color) {
         this.borderColor = color;
-        this.element.style.borderColor = this.borderColor;
+        
+        this.element.style.borderBottomColor = this.borderColor;
     }
 
     setBorderWidth(width) {
         this.borderWidth = width;
-        this.element.style.borderWidth = `${this.borderWidth}px`;
+        this.element.style.borderBottomWidth = `${this.borderWidth}px`;
     }
 }
 
