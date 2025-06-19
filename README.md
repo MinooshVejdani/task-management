@@ -5,7 +5,7 @@ A modular, dynamic task management tool built with vanilla JavaScript, HTML, and
 
 Modern, dark-mode UI with editable, structured task data.
 
-🚀 Features
+🧩 Features
 
 🧱 Dynamic Grid Layout
 Add or remove rows (tasks) and columns (task attributes) easily.
@@ -26,32 +26,15 @@ Uses classes and clean separation of concerns for maintainability.
 
 📁 Project Structure
 
-📦 task-management-grid/
-├── 📄 index.html             # Main HTML structure
-├── 🎨 styles.css             # Styling including dark theme
-├── 📂 JS Modules
-│   ├── main.js              # Entry point & event bindings
-│   ├── grid.js              # Grid creation & layout logic
-│   ├── gridCell.js          # GridCell class for cell logic & rendering
-│   ├── task.js              # Input for task names
-│   ├── status.js            # Status dropdown logic
-│   ├── dateInput.js         # Date input rendering & behavior
-│   ├── time.js              # Time picker functionality
-│   ├── priority.js          # Priority logic & star container
-│   ├── star.js              # Star rating behavior
-│   ├── checkbox.js          # Checkbox UI & interaction
-│   └── dropdown.js          # Reusable dropdown logic
-└─ 📄 README.md              # Project overview (you're here!)
-
+![Task Management App ](./assets/project-structure.png)
 
 --- 
 
 📸 Preview
 
-[click here](https://github.com/MinooshVejdani/task-management.git)
+![Task Management App Screenshot](./assets/screenshot.png)
 
 ---
-
 
 🧠 How It Works
 
@@ -71,13 +54,18 @@ Object-Oriented Programming – Clean, modular code with methods and states
 
 ---
 
-🧩 What I Learned
+📚 What I Learned
 
 - DOM manipulation (createElement, appendChild, querySelectorAll)
 - JavaScript Object-Oriented Programming
 - Modular programming and file separation
 - Dynamic styling and component-based design without a framework
 - Handling date, time, and input states manually
+
+---
+🚀 live Demo
+
+[click here](https://github.com/MinooshVejdani/task-management.git)
 
 ---
 
