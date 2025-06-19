@@ -7,7 +7,6 @@ const mainDropdownMenu = document.querySelector(".mainDropdown-menu");
 const gridContainer = document.querySelector(".grid-container");
 let grid = null;
 
-
 let itemsArr = ["Task", "Deadline", "Priority", "Status", "Time", "Checkbox"];
 
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,5 +1,4 @@
-//const checkboxContainer = document.querySelector('.checkboxContainer');
-//const checkbox = document.querySelector('.checkbox')
+
 
 export class Checkbox {
 constructor(checked = false, color = 'black') {
@@ -13,8 +12,8 @@ constructor(checked = false, color = 'black') {
 
     // Add event listener
     this.element.addEventListener('click', () => {
-        this.toggle(); // Use arrow function to preserve `this` context
-        this.updateCheckboxElement(); // Update the DOM element
+        this.toggle();
+        this.updateCheckboxElement();
     });
 }
     toggle() {

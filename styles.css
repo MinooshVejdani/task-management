@@ -232,6 +232,10 @@ body {
     color: var(--font-color-light);
     max-width: 250px;
 }
+.Input .typing {
+  border-color: royalblue;
+  background-color: #f70202;
+}
 
 .dropdown {
   position: relative; /* Needed for absolutely positioned dropdown-menu */

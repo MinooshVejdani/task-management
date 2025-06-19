@@ -7,9 +7,22 @@ export class Task {
   }
 
   createInput() {
-    this.element.innerHTML = '';
+    this.element.innerHTML = "";
     this.textInput = document.createElement("input");
     this.textInput.classList.add("input");
+
+    // this.textInput.addEventListener('focus', () => {
+    //   this.textInput.add('typing');
+    // })
+
+    this.textInput.addEventListener("blur", () => {
+      const inputValue = this.textInput.value.trim();
+      if (inputValue) {
+        this.createTask();
+      } else {
+        alert("No text available!"); // Optional: warn if input is empty
+      }
+    });
 
     this.textInput.addEventListener("keydown", (event) => {
       if (event.key === "Enter") {
@@ -25,14 +38,14 @@ export class Task {
   }
 
   createTask() {
-    this.element.innerHTML = '';
+    this.element.innerHTML = "";
     this.task = document.createElement("div");
     this.task.textContent = this.textInput.value.trim();
-    this.task.addEventListener('click', () => {
-        const inputValue = this.textInput.value;
-        this.createInput();
-        this.textInput.value = inputValue;
-    })
+    this.task.addEventListener("click", () => {
+      const inputValue = this.textInput.value;
+      this.createInput();
+      this.textInput.value = inputValue;
+    });
     this.element.appendChild(this.task);
   }
 }

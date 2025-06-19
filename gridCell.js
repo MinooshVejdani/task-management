@@ -47,7 +47,6 @@ export class GridCell {
 
     setBorderColor(color) {
         this.borderColor = color;
-        
         this.element.style.borderBottomColor = this.borderColor;
     }
 

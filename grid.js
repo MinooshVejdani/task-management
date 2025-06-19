@@ -47,9 +47,11 @@ export class Grid {
     titleCell.classList.add("title-text");
     columnElement.appendChild(titleCell);
     this.createRemoveButton(titleCell, columnElement, id);
-
+  
+    
     for (let i = 0; i < this.rowsCount; i++) {
-      const gridCell = new GridCell(type, "#1f2120", "#ddd", 1);
+        const gridCell = new GridCell(type, "#1f2120", "#ddd", 1);
+     
       columnElement.appendChild(gridCell.element);
     }
     this.element.appendChild(columnElement);
@@ -59,7 +61,6 @@ export class Grid {
     console.log(id);
   }
 
-  //you need to build objects
   //store rowsCount in gridData
   addRow() {
     const columnsElement = document.querySelectorAll(".grid-column");
@@ -97,18 +98,4 @@ export class Grid {
     console.log(columnsTypeList);
   }
 
-  //deleteRow() {
-  // for(let i = 0; i < columnsTypeList; i++) {
-  // for(let j = 0; j < rowsCount; j++){
-  // if(row)
-  // }}
-  // }
-
-  // editTitle() {
-
-  // }
-
-  // setStyle() {
-
-  // }
 }
