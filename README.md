@@ -65,7 +65,7 @@ Object-Oriented Programming – Clean, modular code with methods and states
 ---
 🚀 live Demo
 
-[click here](https://github.com/MinooshVejdani/task-management.git)
+[click here](https://minooshvejdani.github.io/task-management/)
 
 ---
 
