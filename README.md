@@ -75,10 +75,3 @@ Object-Oriented Programming – Clean, modular code with methods and states
 🔄 Drag-and-drop reordering
 📝 Inline editing for titles
 
----
-
-MIT License
-
-Copyright (c) 2025 Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction...
